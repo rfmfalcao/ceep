@@ -6,19 +6,14 @@ export class ListaDeNotas extends Component {
     return (
       <section>
         <ul>
-          <li>
-            <CardNota />
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <CardNota />
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <CardNota />
-          </li>
+          {Array.of("Trabalho", "Anotações", "Estudos").map((categoria) => {
+            return (
+              <li>
+                <div>{categoria}</div>
+                <CardNota />
+              </li>
+            );
+          })}
         </ul>
       </section>
     );

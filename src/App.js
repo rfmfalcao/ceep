@@ -1,7 +1,7 @@
 import "./App.css";
 import React, { Component } from "react";
 import { ListaDeNotas } from "./components/ListaDeNotas";
-import { Formulario } from "./components/Formulardio";
+import { Formulario } from "./components/Formulario";
 
 class App extends Component {
   render() {
