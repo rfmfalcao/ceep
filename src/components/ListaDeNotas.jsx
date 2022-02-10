@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import CardNota from "./CardNota";
 
 export class ListaDeNotas extends Component {
   render() {
@@ -6,35 +7,22 @@ export class ListaDeNotas extends Component {
       <section>
         <ul>
           <li>
-            <section>
-              <header>
-                <h3>Título</h3>
-              </header>
-              <p>Escreva sua nota</p>
-            </section>
+            <CardNota />
           </li>
         </ul>
         <ul>
           <li>
-            <section>
-              <header>
-                <h3>Título</h3>
-              </header>
-              <p>Escreva sua nota</p>
-            </section>
+            <CardNota />
           </li>
         </ul>
         <ul>
           <li>
-            <section>
-              <header>
-                <h3>Título</h3>
-              </header>
-              <p>Escreva sua nota</p>
-            </section>
+            <CardNota />
           </li>
         </ul>
       </section>
     );
   }
 }
+
+export default ListaDeNotas;
